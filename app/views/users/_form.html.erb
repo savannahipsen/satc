@@ -1,30 +1,38 @@
-<%= form_with(model: user, local: true) do |form| %>
+<%= form_with(model: user, local: true, class: 'form-sign-up') do |form| %>
 
-  <%= form.label :username %>
-  <%= form.text_field :username %>
+<% if user.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-  <%= form.label :email %>
-  <%= form.text_field :email %>
-
-  <%= form.label :password_digest %>
-  <%= form.text_field :password_digest %>
-
-  <%= form.label :password_confirmation %>
-  <%= form.text_field :password_confirmation %>
-
-  <% if user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="actions">
-    <%= form.submit %>
+    <ul>
+    <% user.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
   </div>
+<% end %>
+
+<p>
+  <%= form.label :username, class: 'sr-only' %>
+  <%= form.text_field :username, class: 'form-control', placeholder: "Username" %>
+</p>
+<p>
+  <%= form.label :email, class: 'sr-only' %>
+  <%= form.text_field :email, class: 'form-control', placeholder: "Email" %>
+</p>
+<p>
+  <%= form.label :password_digest, class: 'sr-only' %>
+  <%= form.text_field :password_digest, class: 'form-control', placeholder: "Password" %>
+</p>
+<p>
+  <%= form.label :password_confirmation, class: 'sr-only' %>
+  <%= form.text_field :password_confirmation, class: 'form-control', placeholder: "Password Confirmation" %>
+</p>
+
+  <div class="text-center">
+    <div class="actions">
+       <%= form.submit 'Sign Me Up', :class => 'btn btn-lg btn-block btn-blue' %>
+    </div>
+  </div>
+
 <% end %>

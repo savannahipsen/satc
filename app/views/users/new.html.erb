@@ -1,6 +1,12 @@
-<h1>Oh cool. You want to save cats too?</h1>
+<%= stylesheet_link_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<div class="container">
+  <div class="new-user-header">
+    <h1>You're just in time...</h1>
+  </div>
+
+  <%= render 'form', user: @user %>
+
+  <%= link_to 'Back', users_path %>
+</div>
 <!-- <h3>(Let's make dogs and cats a thing of the past...)</h3> -->
-
-<%= render 'form', user: @user %>
-
-<%= link_to 'Back', users_path %>

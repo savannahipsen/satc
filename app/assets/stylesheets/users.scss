@@ -1,3 +1,32 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$dark-blue: #356177;
+
+.new-user-header {
+  font-size: -webkit-xxx-large;
+  color: $dark-blue;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.form-sign-up {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.btn-blue {
+  background-color: $dark-blue;
+  color: white;
+}
