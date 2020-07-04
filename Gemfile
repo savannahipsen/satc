@@ -28,7 +28,7 @@ gem 'jquery-rails'
 # gem 'redis', '~> 4.0'
 gem 'sprockets-rails', '~> 2.3.2'
 gem 'bootstrap', '~> 4.3.1'
-
+gem 'bootstrap-sass', '~> 3.2.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
