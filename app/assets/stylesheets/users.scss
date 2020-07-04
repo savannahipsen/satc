@@ -26,7 +26,8 @@ $dark-blue: #356177;
     border: 0;
 }
 
+// being overridden somehow :(
 .btn-blue {
-  background-color: $dark-blue;
-  color: white;
+  background-color: $dark-blue !important;
+  color: white !important;
 }

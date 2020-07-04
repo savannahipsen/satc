@@ -1,4 +1,4 @@
-<%= stylesheet_link_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'users.scss', media: 'all', 'data-turbolinks-track': 'reload' %>
 
 <div class="container">
   <div class="new-user-header">
@@ -7,6 +7,7 @@
 
   <%= render 'form', user: @user %>
 
-  <%= link_to 'Back', users_path %>
+  <!-- <div class="text-center">
+    <%= link_to 'Back', users_path %>
+  </div> -->
 </div>
-<!-- <h3>(Let's make dogs and cats a thing of the past...)</h3> -->
