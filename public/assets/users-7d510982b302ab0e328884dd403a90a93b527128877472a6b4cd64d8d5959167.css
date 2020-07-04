@@ -1,0 +1,34 @@
+/* line 3, app/assets/stylesheets/users.scss */
+.new-user-header {
+  font-size: -webkit-xxx-large;
+  color: #356177;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+/* line 10, app/assets/stylesheets/users.scss */
+.form-sign-up {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+/* line 17, app/assets/stylesheets/users.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* line 30, app/assets/stylesheets/users.scss */
+.btn-blue {
+  background-color: #356177 !important;
+  color: white !important;
+}
