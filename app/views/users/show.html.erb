@@ -1,4 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <!-- <div class="new-user-header">
+    <h1>You're just in time...</h1>
+  </div> -->
+  <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  <div class="text-center">
+    <%= link_to 'Edit', edit_user_path(@user) %> |
+    <%= link_to 'Back', users_path %>
+  </div>
+</div>

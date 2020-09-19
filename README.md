@@ -23,4 +23,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
+after pushing to github:
+
+bundle exec rake assets:precompile
+RAILS_ENV=production bundle exec rake assets:precompile
+git push heroku master
+
 * ...
