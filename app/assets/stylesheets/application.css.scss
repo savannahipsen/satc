@@ -16,6 +16,14 @@
 
 @import "bootstrap";
 
+
+@media (max-width: 480px) {
+    .navbar-nav {
+       position: static;
+       width:100%;
+    }
+  }
+
 .application-body {
   background-color: #b5814240;
 }
