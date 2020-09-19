@@ -16,11 +16,11 @@
 
 @import "bootstrap";
 
-
 @media (max-width: 480px) {
     .navbar-nav {
        position: static;
        width:100%;
+       transform:translateZ(0)
     }
   }
 
@@ -34,6 +34,7 @@
   text-align:center;
   float: none;
   vertical-align: top;
+  transform: translateZ(0);
 }
 
 .navbar .navbar-header{
