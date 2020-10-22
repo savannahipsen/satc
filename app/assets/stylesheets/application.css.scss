@@ -15,33 +15,41 @@
  */
 
 @import "bootstrap";
-
-@media (max-width: 480px) {
-    .navbar-nav {
-       position: static;
-       width:100%;
-       transform:translateZ(0)
-    }
-  }
+$dark-blue: #356177;
+$light-grey: #a5a5a5;
+// @media (max-width: 480px) {
+//     .navbar-nav {
+//        position: static;
+//        width:100%;
+//        transform:translateZ(0)
+//     }
+//   }
 
 .application-body {
   background-color: #b5814240;
 }
 
 .navbar-nav {
-  width: 100%;
+  // width: 100%;
   display: block;
-  text-align:center;
+//   text-align: center;
   float: none;
   vertical-align: top;
-  transform: translateZ(0);
+//   transform: translateZ(0);
 }
 
-.navbar .navbar-header{
-  display: inline-block;
-  text-align: center;
-  margin: auto;
-  font-size: x-large;
-  color: #a5a5a5;
-  float: none;
+.custom-nav {
+  background-color: #6a97ad73 !important;
+}
+
+.custom-nav .navbar-nav .nav-link {
+    color: $dark-blue;
+}
+
+a {
+  color: $dark-blue;
+
+  &:visited {
+    color: $light-grey;
+  }
 }
