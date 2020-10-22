@@ -1,14 +1,25 @@
 $light-grey: #a5a5a5;
 $dark-blue: #356177;
 
+@font-face {
+   font-family: 'addison_affson';
+   src: asset-url('addison_affson.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: 'simplicity';
+   src: asset-url('simplicity.ttf') format('truetype');
+}
+
 .welcome-header {
-  font-size: -webkit-xxx-large;
+  font-size: 130px;
+  font-family: 'simplicity';
   color: $dark-blue;
   text-align: center;
 }
 
 .welcome-text {
-  font-size: x-large;
+  font-size: large;
   color: $light-grey;
   text-align: center;
 }

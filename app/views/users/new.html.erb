@@ -1,13 +1,18 @@
 <%= stylesheet_link_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %>
+<!-- devise notifications -->
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 <div class="container">
   <div class="new-user-header">
     <h1>You're just in time...</h1>
+    <p>we're just getting started</p>
+    <p>sign up to get involved</p>
   </div>
 
   <%= render 'form', user: @user %>
 
   <!-- <div class="text-center">
-    <%= link_to 'Back', users_path %>
+  <%= link_to 'Back', users_path %>
   </div> -->
 </div>

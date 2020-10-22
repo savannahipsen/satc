@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Fight for Felines</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
 
   <body class="application-body">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container">
-        <a class="navbar-brand mx-auto" href="/">
-            SATC
-        </a>
-        <div class="collapse navbar-collapse text-right">
-          <ul class="navbar-nav">
-            <li class="navbar-header">
-                Fight for Felines
-            </li>
-            <li class="nav-item pull-right">
-                <%= link_to "Sign Up", new_user_path, class: "nav-link" %>
-            </li>
-
-              <!-- <li class="nav-item">
-                  <a  class="nav-link text-nowrap" href="#">Navbar Link Number 3</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-nowrap" href="#">Navbar Link Number 4</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-nowrap" href="#">Navbar Link Number 5</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-nowrap" href="#">Navbar Link Number 6</a>
-              </li> -->
-
-         </ul>
+    <nav class="navbar navbar-expand-md custom-nav">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <%= link_to 'Home', root_path, class: 'nav-link' %>
+                </li>
+                <!-- <li class="nav-item"> -->
+                    <!-- <a class="nav-link" href="//codeply.com">Codeply</a> -->
+                <!-- </li> -->
+            </ul>
         </div>
-      </div>
+        <div class="mx-auto order-0">
+            <!-- <a class="navbar-brand mx-auto" href="#">Fight for Felines</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 justify-content-end">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li class="nav-item">
+                  <%# <% <%= link_to 'Sign Up', new_user_path, class: 'nav-link' %>
+                </li> -->
+                <li class="nav-item">
+                  <%= link_to 'Blog', posts_path, class: 'nav-link' %>
+                <!-- </li> -->
+                <!-- <li> -->
+                  <%# <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: 'nav-link' %>
+                <!-- </li> -->
+            </ul>
+        </div>
     </nav>
 
     <div style="margin-top:20px">
       <%= yield %>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
   </body>
 </html>
