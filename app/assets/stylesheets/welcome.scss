@@ -1,5 +1,6 @@
 $light-grey: #a5a5a5;
 $dark-blue: #356177;
+$dark-yellow: #a0743e;
 
 @font-face {
    font-family: 'addison_affson';
@@ -11,15 +12,22 @@ $dark-blue: #356177;
    src: asset-url('simplicity.ttf') format('truetype');
 }
 
+@font-face {
+   font-family: 'cormorant-garamond-reg';
+   src: asset-url('cormorant-garamond-reg.ttf') format('truetype');
+}
+
 .welcome-header {
   font-size: 130px;
   font-family: 'simplicity';
   color: $dark-blue;
   text-align: center;
+  padding-bottom: 2%;
 }
 
 .welcome-text {
-  font-size: large;
-  color: $light-grey;
+  font-size: medium;
+  // color: $light-grey;
   text-align: center;
+  font-family: 'cormorant-garamond-reg';
 }
