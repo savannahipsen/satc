@@ -15,8 +15,13 @@
  */
 
 @import "bootstrap";
+
 $dark-blue: #356177;
+$light-blue: #589ec1;
+
 $light-grey: #a5a5a5;
+
+$dark-yellow: #a0743e;
 // @media (max-width: 480px) {
 //     .navbar-nav {
 //        position: static;
@@ -50,6 +55,6 @@ a {
   color: $dark-blue;
 
   &:visited {
-    color: $light-grey;
+    color: $dark-yellow;
   }
 }
