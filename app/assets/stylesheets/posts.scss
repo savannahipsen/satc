@@ -1,12 +1,41 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$dark-blue: #356177;
-
-.header-blue {
-  color: $dark-blue
+@font-face {
+   font-family: 'cormorant-garamond-reg';
+   src: asset-url('cormorant-garamond-reg.ttf') format('truetype');
 }
 
-a {
-  color: $dark-blue
+$dark-blue: #356177;
+
+.posts-header {
+  font-family: 'cormorant-garamond-reg';
+  color: #356177;
+  margin-bottom: 2%;
+}
+
+.posts-form {
+  width: 100%;
+  max-width: 80%;
+  padding: 15px;
+  margin: auto;
+}
+
+.new-post-submit {
+  width: 40%;
+}
+
+.post-text-size {
+  padding: 30%
+}
+
+.post-gar-text {
+  font-size: medium;
+  // text-align: center;
+  font-family: 'cormorant-garamond-reg';
+}
+
+.adoption-day {
+  max-height: 500px;
+  max-width: 800px;
 }

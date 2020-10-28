@@ -18,9 +18,7 @@
 
 $dark-blue: #356177;
 $light-blue: #589ec1;
-
 $light-grey: #a5a5a5;
-
 $dark-yellow: #a0743e;
 // @media (max-width: 480px) {
 //     .navbar-nav {
@@ -29,18 +27,13 @@ $dark-yellow: #a0743e;
 //        transform:translateZ(0)
 //     }
 //   }
+@font-face {
+   font-family: 'cormorant-garamond-reg';
+   src: asset-url('cormorant-garamond-reg.ttf') format('truetype');
+}
 
 .application-body {
   background-color: #b5814240;
-}
-
-.navbar-nav {
-  // width: 100%;
-  display: block;
-//   text-align: center;
-  float: none;
-  vertical-align: top;
-//   transform: translateZ(0);
 }
 
 .custom-nav {
@@ -48,13 +41,24 @@ $dark-yellow: #a0743e;
 }
 
 .custom-nav .navbar-nav .nav-link {
-    color: $dark-blue;
+  color: $dark-blue;
 }
 
 a {
   color: $dark-blue;
 
   &:visited {
-    color: $dark-yellow;
+    color: $dark-blue;
   }
+}
+
+.centered-header {
+  font-size: -webkit-xxx-large;
+  color: $dark-blue;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.garamond-font {
+  font-family: 'cormorant-garamond-reg'
 }
