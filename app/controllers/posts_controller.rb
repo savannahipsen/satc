@@ -1,11 +1,12 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:new]
 
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    render 'static_welcome'
+    # @posts = Post.all
   end
 
   # GET /posts/1
@@ -26,6 +27,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
+    @post.writer_user_id = current_user.id
 
     respond_to do |format|
       if @post.save
@@ -70,6 +72,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.fetch(:post, {})
+      params.require(:post).permit(:title, :post_text, :writer_user_id)
     end
 end

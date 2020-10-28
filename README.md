@@ -19,9 +19,9 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+Deployment instructions:
 
-after pushing to github:
+after pushing to github & merging to master 
 
 bundle exec rake assets:precompile
 RAILS_ENV=production bundle exec rake assets:precompile

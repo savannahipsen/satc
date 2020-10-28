@@ -1,4 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<div class=container>
+  <p>
+    <%= @post.title %>
+    <%= @post.post_text %>
+    <%# <%= image_tag 'https://imgur.com/43F1dMV' %> %>
+    <!-- <img src="http://imgur.com/43F1dMV"> -->
+    <%= image_tag 'gus_grey.JPG' %>
+</div>
+
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
