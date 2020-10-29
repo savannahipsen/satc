@@ -194,13 +194,13 @@ AUTOCONF = ${SHELL} /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/ffi-
 AUTOHEADER = ${SHELL} /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/ffi-1.13.1/ext/ffi_c/libffi/missing autoheader
 AUTOMAKE = ${SHELL} /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/ffi-1.13.1/ext/ffi_c/libffi/missing automake-1.15
 AWK = awk
-CC = gcc
-CCAS = gcc
+CC = clang
+CCAS = clang
 CCASDEPMODE = depmode=none
 CCASFLAGS = 
 CCDEPMODE = depmode=none
 CFLAGS =  -Wall -fexceptions
-CPP = gcc -E
+CPP = clang -E
 CPPFLAGS = 
 CXX = g++
 CXXCPP = g++ -E
@@ -271,7 +271,7 @@ abs_srcdir = /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/ffi-1.13.1/
 abs_top_builddir = /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/ffi-1.13.1/ext/ffi_c/libffi-x86_64-darwin18
 abs_top_srcdir = /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/ffi-1.13.1/ext/ffi_c/libffi
 ac_ct_AR = ar
-ac_ct_CC = gcc
+ac_ct_CC = clang
 ac_ct_CXX = g++
 ac_ct_DUMPBIN = 
 am__include = include
