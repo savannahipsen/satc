@@ -32,6 +32,7 @@ gem 'bootstrap-sass', '~> 3.4.1'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'msgpack' '~> 1.3.3'
 
 gem 'pry-rails', :group => :development
 
