@@ -1,5 +1,5 @@
 current directory: /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/msgpack-1.3.3/ext/msgpack
-/Users/savannahlin/.rbenv/versions/2.6.3/bin/ruby -I /Users/savannahlin/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200702-9517-10nznup.rb extconf.rb
+/Users/savannahlin/.rbenv/versions/2.6.3/bin/ruby -I /Users/savannahlin/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20201029-31593-z3kp3z.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -36,4 +36,4 @@ linking shared-object msgpack/msgpack.bundle
 
 current directory: /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/msgpack-1.3.3/ext/msgpack
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20200702-9517-k1ivxx/msgpack
+/usr/local/bin/ginstall -c -m 0755 msgpack.bundle ./.gem.20201029-31593-1el03e6/msgpack

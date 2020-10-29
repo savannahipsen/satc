@@ -1,5 +1,5 @@
 current directory: /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
-/Users/savannahlin/.rbenv/versions/2.6.3/bin/ruby -I /Users/savannahlin/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20200702-9517-5t7yx8.rb extconf.rb
+/Users/savannahlin/.rbenv/versions/2.6.3/bin/ruby -I /Users/savannahlin/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20201029-31593-1t2c496.rb extconf.rb
 creating Makefile
 
 current directory: /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
@@ -16,4 +16,4 @@ linking shared-object byebug/byebug.bundle
 
 current directory: /Users/savannahlin/mygems/vendor/bundle/ruby/2.6.0/gems/byebug-11.1.3/ext/byebug
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20200702-9517-hzdzdj/byebug
+/usr/local/bin/ginstall -c -m 0755 byebug.bundle ./.gem.20201029-31593-waoynx/byebug
