@@ -42,6 +42,9 @@ $dark-yellow: #a0743e;
 
 .custom-nav .navbar-nav .nav-link {
   color: $dark-blue;
+  @media(max-width: 100%) {
+    background-color: #000;
+  }
 }
 
 a {
