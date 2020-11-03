@@ -31,11 +31,35 @@ $dark-blue: #356177;
 
 .post-gar-text {
   font-size: medium;
-  // text-align: center;
   font-family: 'cormorant-garamond-reg';
 }
 
-.adoption-day {
-  max-height: 500px;
-  max-width: 800px;
+.static-welcome-photo {
+  max-height: 55%;
+  max-width: 65%;
+  margin-bottom: 2%;
+}
+
+.carousel {
+    position: relative;
+    max-width: 60%;
+    margin: auto;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: -webkit-transform .6s ease-in-out;
+    -o-transition: -o-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out,-o-transform .6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
 }
