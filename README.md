@@ -26,4 +26,10 @@ after pushing to github & merging to master
 bundle exec rake assets:precompile
 RAILS_ENV=production bundle exec rake assets:precompile
 git push heroku master
-(* make sure you're on master branch *)
+* make sure you're on master branch *
+
+
+msgpack issue:
+
+gem uninstall msgpack
+bundle install --redownload
