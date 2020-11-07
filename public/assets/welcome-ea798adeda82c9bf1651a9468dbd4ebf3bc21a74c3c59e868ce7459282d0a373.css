@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'addison_affson';
+  src: url(/assets/addison_affson.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'simplicity';
+  src: url(/assets/simplicity.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'cormorant-garamond-reg';
+  src: url(/assets/cormorant-garamond-reg.ttf) format("truetype");
+}
+
+/* line 20, app/assets/stylesheets/welcome.scss */
+.welcome-header {
+  font-size: 600%;
+  font-family: 'simplicity';
+  color: #356177;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+/* line 28, app/assets/stylesheets/welcome.scss */
+.welcome-logo {
+  max-width: 20%;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 34, app/assets/stylesheets/welcome.scss */
+.welcome-text {
+  font-size: medium;
+  text-align: center;
+  font-family: 'cormorant-garamond-reg';
+}
