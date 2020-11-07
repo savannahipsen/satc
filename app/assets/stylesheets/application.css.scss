@@ -20,6 +20,7 @@ $dark-blue: #356177;
 $light-blue: #589ec1;
 $light-grey: #a5a5a5;
 $dark-yellow: #a0743e;
+$peach-skin: #fef8ee;
 // @media (max-width: 480px) {
 //     .navbar-nav {
 //        position: static;
@@ -33,18 +34,15 @@ $dark-yellow: #a0743e;
 }
 
 .application-body {
-  background-color: #b5814240;
+  background-color: $peach-skin;
 }
 
 .custom-nav {
-  background-color: #6a97ad73 !important;
+  background-color: #b7d0d1 !important;
 }
 
 .custom-nav .navbar-nav .nav-link {
   color: $dark-blue;
-  @media(max-width: 100%) {
-    background-color: #000;
-  }
 }
 
 a {
@@ -69,4 +67,8 @@ a {
 .nav-link {
   font-family: 'garamond-font';
   font-size: 120%;
+}
+
+.navbar-logo {
+  max-width: 10%;
 }
