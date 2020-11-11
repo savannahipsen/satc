@@ -8,12 +8,11 @@
     the lives of homeless cats and kittens.
   </p>
   </br>
-  </br>
   <h1 class="text-center posts-header">Our rescued babies</h1>
   <p class="post-gar-text">
     It was a cold morning, Christmas Eve of 2019. Savannah decided she didn't want to celebrate Christmas this year, she wanted to
     save some cats. She had already done her research and decided to call
-    <%= link_to 'Utah Valley Animal Shelter', "https://www.uvar.us/adoptworkingcats.html" %> and adopt six working cats.
+    <%= link_to 'Utah Valley Animal Shelter', "https://www.uvar.us/adoptworkingcats.html" %> and adopt six working/feral cats.
   </p>
   <div class="text-center">
     <%= image_tag 'first_six_adoption_day.jpg', class: 'static-welcome-photo' %>
@@ -26,38 +25,8 @@
   <p class="post-gar-text">
     After bringing them all inside and spending more time with everyone, I found myself quickly becoming friends with three of them.
   </p>
-  <h1 class="text-center posts-header">Opal</h1>
-  <p class="post-gar-text">
-    ...was the first to accept my friendship and the first to find a new home outside of my own.
-  </p>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <%= image_tag 'opal/opal1.jpeg', class: 'static-welcome-photo d-block img-fluid' %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'opal/opal2.jpeg', class: 'static-welcome-photo d-block img-fluid' %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'opal/opal3.jpeg', class: 'static-welcome-photo d-block img-fluid' %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'opal/opal4.jpeg', class: 'static-welcome-photo d-block img-fluid' %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'opal/opal5.jpeg', class: 'static-welcome-photo d-block img-fluid' %>
-      </div>
-      <div class="carousel-item">
-        <%= image_tag 'opal/opal6.jpeg', class: 'static-welcome-photo d-block img-fluid' %>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+  </br>
+  <%= render 'opal_summary' %>
+  </br>
+  <%= render 'dublin_summary' %>
 </div>
