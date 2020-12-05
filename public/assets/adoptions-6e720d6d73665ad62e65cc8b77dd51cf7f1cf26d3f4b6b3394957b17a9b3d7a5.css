@@ -1,0 +1,17 @@
+/* line 5, app/assets/stylesheets/adoptions.scss */
+#adoption-counter {
+  width: 100px;
+  height: 100px;
+  background: #b588428a;
+  border-radius: 50px;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+/* line 16, app/assets/stylesheets/adoptions.scss */
+.count {
+  line-height: 100px;
+  color: #fef8ee;
+  margin-left: 40%;
+  font-size: 140%;
+}
