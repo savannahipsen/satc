@@ -46,7 +46,7 @@ $peach-skin: #fef8ee;
 }
 
 a {
-  color: $dark-blue;
+  color: $dark-blue !important;
 
   &:visited {
     color: $dark-blue;
