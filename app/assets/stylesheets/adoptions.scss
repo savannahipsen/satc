@@ -1,0 +1,21 @@
+$counter-blue: #356177c2;
+$counter-gold: #b588428a;
+$peach-skin: #fef8ee;
+
+#adoption-counter {
+  width: 100px;
+	height: 100px;
+	background: $counter-gold;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+.count {
+  line-height: 100px;
+  color: $peach-skin;
+  margin-left: 40%;
+  font-size: 140%;
+}

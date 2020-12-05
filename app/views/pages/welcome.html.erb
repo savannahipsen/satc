@@ -20,9 +20,9 @@
   <!-- </br>
   </br> -->
   <p class="welcome-text">
-    Want to learn more? Check out our <%= link_to 'Blog', posts_path %>
+    Want to learn more? Check out our <%= link_to 'Adoption Stories', adoptions_path %> or <%= link_to 'Blog', posts_path %>
   </p>
   <p class="welcome-text">
-    Or contact us at: savingallthecats@gmail.com
+    Or contact us at: <%= mail_to "savingallthecats@gmail.com", "savingallthecats@gmail.com" %>
   </p>
 </div>

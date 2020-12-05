@@ -40,19 +40,37 @@ $dark-blue: #356177;
   margin-bottom: 2%;
 }
 
+.carousel-photo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-frame {
+  max-height: 100%;
+  min-height: 100%;
+  widht: 100%;
+}
+
 .carousel {
-    position: relative;
+    // position: relative;
+    max-height: 60%;
     max-width: 60%;
     margin: auto;
+  // width:640px;
+  // height:360px;
 }
 
 .carousel-inner {
-    position: relative;
+    position: absolute;
     width: 100%;
     overflow: hidden;
+    height: 800px !important;
 }
 
 .carousel-item {
+    position: relative;
+    height:100%;
     -webkit-transition: -webkit-transform .6s ease-in-out;
     transition: -webkit-transform .6s ease-in-out;
     -o-transition: -o-transform .6s ease-in-out;
