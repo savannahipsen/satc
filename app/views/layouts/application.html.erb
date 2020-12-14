@@ -7,33 +7,42 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <%= favicon_link_tag asset_path('favicon-heart.png') %>
   </head>
 
   <body class="application-body">
-    <nav class="navbar navbar-expand-md custom-nav justify-content-between" role="navigation">
-      <div class="container-fluid">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= image_tag('logos/navbarlightblue.png', alt: "logo", class: 'navbar-logo') %>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to 'Home', root_path, class: 'dropdown-item' %>
-              <%= link_to 'Blog', posts_path, class: 'dropdown-item' %>
-              <%= link_to 'Adoptions', adoptions_path, class: 'dropdown-item' %>
-              <!-- <a class="dropdown-item" href="#">Blog</a> -->
-              <!-- <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a> -->
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <header id="header">
+     <div class="navbar-logo">
+       <%= link_to image_tag('logos/logo-trans-brown.png', :class => "logo-style"), root_path %>
+     </div>
+     <div class="website-navcontainer">
+       <nav class="nav nav-center">
+          <%# <%= link_to 'Home', root_path, class: "top-link nav-link" %>
+          <%= link_to 'About Us', posts_path, class: "top-link nav-link" %>
+          <%= link_to 'Adoptions', adoptions_path, class: "top-link nav-link" %>
+
+       </nav>
+
+       <nav class="nav right">
+         <a href="#" class="nav-link top-link">Sign In</a>
+       </nav>
+     </div>
+    </header>
+    <section id="header-wrap" class="mobile-view-img">
+      <!-- <div class="js-banner-container" data-width="2000" data-height="500" style="min-height: 352.5px;"> -->
+        <div class="header-img">
+          <img class="lazyloaded header-photo" data-src="https://i.imgur.com/4Poseyu.jpg" alt="" src="https://i.imgur.com/4Poseyu.jpg">
+        </div>
+        <div class="container">
+          <h1 class="header-title">Fight for Felines</h1>
+          <!-- <h2 class="header-tagline">Saving All The Cats</h2> -->
+        </div>
+      <!-- </div> -->
+    </section>
 
     <div style="margin-top:20px">
       <%= yield %>
