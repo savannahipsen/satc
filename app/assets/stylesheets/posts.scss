@@ -11,7 +11,7 @@ $dark-blue: #356177;
 .posts-header {
   font-family: 'cormorant-garamond-reg';
   color: #356177;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 
 .posts-form {
@@ -34,72 +34,25 @@ $dark-blue: #356177;
   font-family: 'cormorant-garamond-reg';
 }
 
-.static-welcome-photo {
-  max-height: 55%;
-  max-width: 65%;
-  margin-bottom: 2%;
-}
-
-.carousel-photo {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-outer {
+.img-container {
   position: relative;
-}
 
-.carousel {
-    height: 100%;
-    max-width: 60%;
-    margin: auto;
-}
+  &::after {
+    content: url(https://i.imgur.com/1fPLlj7.jpg);
+    display: block;
+    padding-bottom: 100%;
+  }
 
-.carousel-inner {
-    // max-height: 75% !important;
-    // height: 800px !important;
-}
-
-.carousel-item {
-    position: relative;
-    height:100%;
-    -webkit-transition: -webkit-transform .6s ease-in-out;
-    transition: -webkit-transform .6s ease-in-out;
-    -o-transition: -o-transform .6s ease-in-out;
-    transition: transform .6s ease-in-out;
-    transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out,-o-transform .6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-}
-
-@media(min-width: 992px){
-    .carousel {
-      margin-top: 20px;
-
-    .carousel-inner {
-      height: auto;
-    .carousel-item {
-        height:800px;
-        line-height:300px;
-      }
-    }
+  img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
   }
 }
 
-@media(max-width: 991px){
-    .carousel {
-      margin-top: 20px;
-
-    .carousel-inner {
-      height: auto;
-    .carousel-item {
-        height:300px;
-        line-height:300px;
-        text-align:center;
-      }
-    }
-  }
+.square-thumb {
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
 }
