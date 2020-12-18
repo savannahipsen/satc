@@ -19,32 +19,28 @@
      <div class="navbar-logo">
        <%= link_to image_tag('logos/logo-trans-brown.png', :class => "logo-style"), root_path %>
      </div>
-     <div class="website-navcontainer">
+     <div class="website-navcontainer media-hide">
        <nav class="nav nav-center">
           <%# <%= link_to 'Home', root_path, class: "top-link nav-link" %>
           <%= link_to 'About Us', posts_path, class: "top-link nav-link" %>
           <%= link_to 'Adoptions', adoptions_path, class: "top-link nav-link" %>
-
        </nav>
-
        <nav class="nav right">
          <a href="#" class="nav-link top-link">Sign In</a>
        </nav>
      </div>
     </header>
-    <section id="header-wrap" class="mobile-view-img">
-      <!-- <div class="js-banner-container" data-width="2000" data-height="500" style="min-height: 352.5px;"> -->
-        <div class="header-img">
-          <img class="lazyloaded header-photo" data-src="https://i.imgur.com/4Poseyu.jpg" alt="" src="https://i.imgur.com/4Poseyu.jpg">
-        </div>
-        <div class="container">
-          <h1 class="header-title">Fight for Felines</h1>
-          <!-- <h2 class="header-tagline">Saving All The Cats</h2> -->
-        </div>
-      <!-- </div> -->
-    </section>
+    <div id="header-wrap">
+      <div class="header-img img-gradient">
+        <img class="lazyloaded header-photo fade-btm-top" data-src="https://i.imgur.com/4Poseyu.jpg" alt="" src="https://i.imgur.com/4Poseyu.jpg">
+      </div>
+      <div class="container">
+        <h1 class="header-title">Fight for Felines</h1>
+        <!-- <h2 class="header-tagline">Saving All The Cats</h2> -->
+      </div>
+    </div>
 
-    <div style="margin-top:20px">
+    <div>
       <%= yield %>
     </div>
   </body>

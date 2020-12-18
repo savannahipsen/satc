@@ -14,6 +14,19 @@
  *= require_self
  */
 
+ /* Large desktop */
+ // @media (min-width: 1200px) { ... }
+
+ /* Portrait tablet to landscape and desktop */
+ // @media (min-width: 768px) and (max-width: 979px) { ... }
+
+ /* Landscape phone to portrait tablet */
+ // @media (max-width: 767px) { ... }
+
+ /* Landscape phones and down */
+ // @media (max-width: 480px) { ... }
+
+
 @import "bootstrap";
 
 $dark-blue: #356177;
@@ -40,6 +53,11 @@ $transparent: #ffffff00;
    src: asset-url('alice-reg.ttf') format('truetype');
 }
 
+@font-face {
+   font-family: 'foglihten';
+   src: asset-url('Foglihten.otf') format('truetype');
+}
+
 .application-body {
   background-color: $peach-skin;
 }
@@ -47,14 +65,13 @@ $transparent: #ffffff00;
 @media(min-width: 992px){
   #header-wrap {
     .container {
-      top: 50%;
+      top: 23%;
+      // margin: auto;
     }
 
     .header-title {
-      font-family: 'alice';
-      font-size: 50px;
-      color: $dark-brown;
       line-height: 1.2em;
+      letter-spacing: 8px;
     }
   }
 
@@ -66,42 +83,7 @@ $transparent: #ffffff00;
   }
 
   .logo-style {
-    max-width: 80px;
-  }
-}
-
-// iphone CSS
-
-@media(max-width: 991px){
-  #header {
-    .website-navcontainer {
-      display: inline-block;
-      width: 70%;
-      background-color: $transparent !important;
-    }
-
-    .nav a {
-         color: $peach-skin !important;
-     }
-   }
-
-  #header-wrap {
-    .container {
-      top: 30%;
-    }
-
-    .header-title{
-      color: $light-brown !important;
-    }
-  }
-
-  .navbar-logo {
-    max-width: 50px;
-    margin-right: 10px;
-  }
-
-  .logo-style {
-    max-width: 50px;
+    max-width: 70px;
   }
 }
 
@@ -116,21 +98,8 @@ $transparent: #ffffff00;
 .navbar-logo {
   width: 80px;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 15px;
   margin-top: 1%;
-}
-
-.small-nav-overlay {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,.3);
-    display: none;
-    pointer-events: none;
 }
 
 #header {
@@ -141,7 +110,6 @@ $transparent: #ffffff00;
 
   .website-navcontainer {
     display: inline-block;
-    background-color: #fbf5eab8;
     border-radius: 10px;
     padding: 0 10px;
   }
@@ -155,12 +123,15 @@ $transparent: #ffffff00;
         display: inline-block;
         padding: 20px 10px;
         font-size: 14px;
-        color: $dark-brown;
+        color: $peach-skin;
+        letter-spacing: 1px;
     }
   }
 }
 
 #header-wrap {
+  margin-bottom: -10px !important;
+
   .container {
     position: absolute;
     width: 98%;
@@ -172,12 +143,92 @@ $transparent: #ffffff00;
   }
 
   .header-title {
-    font-family: 'alice';
-    font-size: 40px;
+    font-family: 'foglihten';
+    font-size: 50px;
+    font-weight: 500;
     line-height: 1.2em;
+    color: $peach-skin;
   }
 }
 
 .right {
   float: right;
+}
+
+.img-gradient {
+  position: relative;
+  display: inline-block;
+}
+
+.img-gradient:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, rgba(205,197,186, .8) 0%, rgba(140, 130, 120, .2) 50%);
+}
+
+.img-gradient img {
+  display: block;
+}
+
+// iphone CSS
+
+@media(max-width: 991px){
+  #header {
+    .website-navcontainer {
+      display: inline-block;
+      width: 70%;
+    }
+   }
+
+  #header-wrap {
+    .container {
+      top: 30%;
+    }
+  }
+
+  .navbar-logo {
+    max-width: 50px;
+    margin-right: 7px;
+  }
+
+  .logo-style {
+    max-width: 50px;
+  }
+
+  .media-hide {
+    display: none !important;
+  }
+}
+
+@media(max-width: 767px){
+  #header {
+    .website-navcontainer {
+      display: inline-block;
+      width: 70%;
+    }
+   }
+
+  #header-wrap {
+    .container {
+      top: 30%;
+    }
+  }
+
+  .navbar-logo {
+    max-width: 40px;
+    margin-right: 5px;
+  }
+
+  .logo-style {
+    max-width: 40px;
+  }
+
+  .media-hide {
+    display: none !important;
+  }
 }
