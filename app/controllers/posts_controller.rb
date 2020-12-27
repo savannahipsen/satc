@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    render 'static_welcome'
+    render 'about_us'
   end
 
   # GET /posts/1
