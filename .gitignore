@@ -4,8 +4,11 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore bundler config.
-/.bundle
+.rspec
+/public/system
+/coverage/
+/spec/tmp
+
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -13,14 +16,39 @@
 !/log/.keep
 !/tmp/.keep
 
+# Comment out this rule if you are OK with secrets being uploaded to the repo
+# config/initializers/secret_token.rb
+config/master.key
+
+# dotenv, dotenv-rails
+# TODO Comment out these rules if environment variables can be committed
+# .env
+# .env.*
+
+## Environment normalization:
+/.bundle
+/vendor/bundle
+
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore node_modules
+node_modules/
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
-
-/node_modules
-/yarn-error.log
-
-.byebug_history
-
-# Ignore master key for decrypting credentials and more.
-/config/master.key
+/public/uploads

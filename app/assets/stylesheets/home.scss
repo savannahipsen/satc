@@ -4,8 +4,39 @@
 
 
 $base-grey: #a5a5a5;
+$peach-skin: #fef8ee;
+$dark-brown: #76706c;
+$light-brown: #faf9f1;
 
-.home-body {
-  height: auto;
-  // background-color: #b5814240;
+
+@media(min-width: 992px){
+  .link-media-hide {
+    display: none !important;
+  }
+}
+
+#home-link-image {
+  .container {
+    position: absolute;
+    width: 98%;
+    height: 32%;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%) translateY(-60%);
+    text-align: center;
+  }
+
+  .link-title {
+    font-family: 'foglihten';
+    font-size: 150%;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: $light-brown;
+  }
+}
+
+a:hover {
+  color: $peach-skin !important;
+  text-decoration: none !important;
+  font-weight: 700 ;
 }
