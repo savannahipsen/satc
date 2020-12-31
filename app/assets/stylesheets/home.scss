@@ -8,10 +8,25 @@ $peach-skin: #fef8ee;
 $dark-brown: #76706c;
 $light-brown: #faf9f1;
 
-
 @media(min-width: 992px){
+  #header-wrap {
+    .container {
+      top: 10%;
+    }
+
+    .header-title {
+      line-height: 1.2em;
+      letter-spacing: 8px;
+      padding-top: 7%;
+    }
+  }
+
   .link-media-hide {
     display: none !important;
+  }
+
+  .logo-style {
+    max-width: 70px;
   }
 }
 
@@ -28,7 +43,7 @@ $light-brown: #faf9f1;
 
   .link-title {
     font-family: 'foglihten';
-    font-size: 150%;
+    font-size: 115%;
     font-weight: 500;
     line-height: 1.2em;
     color: $light-brown;
@@ -39,4 +54,8 @@ a:hover {
   color: $peach-skin !important;
   text-decoration: none !important;
   font-weight: 700 ;
+}
+
+.header-bottom {
+  // margin-bottom: -2%;
 }

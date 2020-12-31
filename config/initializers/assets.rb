@@ -14,5 +14,5 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.public_file_server.enabled = true
 
 Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
-Rails.application.config.assets.precompile += %w( home.scss users.scss welcome.scss adoptions.scss
+Rails.application.config.assets.precompile += %w( home.scss users.scss welcome.scss rescues.scss
   bootstrap_and_overrides.scss adoptions.js)

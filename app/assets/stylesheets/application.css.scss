@@ -59,8 +59,7 @@ $transparent: #ffffff00;
 }
 
 .application-body {
-  // height: 100%;
-  background-color: $dark-brown;
+  background-color: #b1937fa8;
 }
 
 a {
@@ -73,30 +72,6 @@ a {
   letter-spacing: 1px;
 }
 
-@media(min-width: 992px){
-  #header-wrap {
-    .container {
-      top: 23%;
-    }
-
-    .header-title {
-      line-height: 1.2em;
-      letter-spacing: 8px;
-    }
-  }
-
-  #header {
-    .website-navcontainer {
-      display: inline-block;
-      width: 85%;
-    }
-  }
-
-  .logo-style {
-    max-width: 70px;
-  }
-}
-
 .header-img {
   width: 100% !important;
   overflow: hidden;
@@ -104,7 +79,6 @@ a {
 
 .header-photo {
   width: 100%;
-  // height: -webkit-fill-available;
 }
 
 .navbar-logo {
@@ -142,11 +116,9 @@ a {
 }
 
 #header-wrap {
-  margin-bottom: -10px !important;
-
   .container {
     position: absolute;
-    width: 98%;
+    width: 100%;
     height: inherit;
     left: 50%;
     z-index: 2;
@@ -160,7 +132,6 @@ a {
     font-weight: 500;
     line-height: 1.2em;
     color: $peach-skin;
-    padding-top: 7%;
   }
 }
 
@@ -179,13 +150,13 @@ a {
 }
 
 .img-gradient {
-  position: relative;
-  display: inline-block;
+  position: inherit;
+  display: inline;
 }
 
 .img-gradient:after {
   content: '';
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -214,6 +185,10 @@ a {
       padding-top: 20%;
       font-size: 175%;
     }
+  }
+
+  .header-img {
+    height: 12rem;
   }
 
   .navbar-logo {
