@@ -48,12 +48,6 @@ $light-brown: #faf9f1;
   }
 }
 
-.square-thumb {
-  overflow: hidden;
-  width: 250px;
-  height: 250px;
-}
-
 .navbar-top-padding {
   padding-top: 35%;
 }
@@ -74,8 +68,9 @@ $light-brown: #faf9f1;
     height: 1150px;
   }
 
-  .post-header-photo{
-    width: 100% !important;
+  .post-header-photo {
+    // overflow: hidden;
+    // height: 1100px;
   }
 }
 
@@ -93,6 +88,9 @@ $light-brown: #faf9f1;
 
   .post-img {
     width: 100% !important;
+  }
+
+  .post-header-photo {
     overflow: hidden;
     height: 1100px;
   }
@@ -102,10 +100,6 @@ $light-brown: #faf9f1;
   }
 
   .post-header-photo{
-    // width: 100% !important;
-    // overflow: hidden;
-    // height: fit-content;
     transform: translateX(-28%);
-     // translateY(-60%);
   }
 }

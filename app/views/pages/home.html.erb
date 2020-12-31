@@ -1,4 +1,4 @@
-<div id="header-wrap">
+<div id="header-wrap" class="header-bottom">
   <div class="header-img img-gradient">
     <img class="lazyloaded header-photo fade-btm-top" data-src="https://i.imgur.com/4Poseyu.jpg" alt="Feebs & Red" src="https://i.imgur.com/4Poseyu.jpg">
   </div>
@@ -7,12 +7,21 @@
   </div>
 </div>
 
+<!-- media query link images for phones -->
+<div id="home-link-image" class="link-media-hide">
+  <div class="header-img">
+    <img class="lazyloaded header-photo" data-src="https://i.imgur.com/HobGX7R.jpg" alt="" src="https://i.imgur.com/HobGX7R.jpg">
+  </div>
+  <div class="container" style="padding-left: 40%;">
+    <%= link_to 'About Us', posts_path, class: "link-title" %>
+  </div>
+</div>
 
 <div id="home-link-image" class="link-media-hide">
   <div class="header-img">
     <img class="lazyloaded header-photo" data-src="https://i.imgur.com/9MRduqr.jpg" alt="" src="https://i.imgur.com/9MRduqr.jpg">
   </div>
-  <div class="container">
-    <%= link_to 'About Us', posts_path, class: "link-title" %>
+  <div class="container" style="padding-right: 40%;">
+    <%= link_to 'Our Rescues', rescues_path, class: "link-title" %>
   </div>
 </div>
