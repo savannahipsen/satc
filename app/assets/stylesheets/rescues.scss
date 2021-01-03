@@ -84,7 +84,7 @@ $light-teal: #b7d0d1;
   }
 
   .rescues-container {
-    top: 85% !important;
+    top: 140% !important;
   }
 }
 
@@ -122,7 +122,7 @@ $light-teal: #b7d0d1;
   }
 
   .square-thumb {
-    width: fit-content;
+    width: 310px;
     margin: 2% 8%;
   }
 }
@@ -203,12 +203,11 @@ $light-teal: #b7d0d1;
   z-index: 1;
   opacity: 75%;
   height: inherit;
-  // transform: translateX(-28%)
 }
 
-.sub-row {
-  margin-top: 2%
-}
+// .sub-row {
+//   margin-top: 2%
+// }
 
 .last {
   // margin-top: 2%;
