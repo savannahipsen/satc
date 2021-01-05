@@ -1,0 +1,22 @@
+$dark-blue: #356177;
+
+.hidden {
+  display: none;
+}
+
+.adoptee-name {
+  padding-top: 20%;
+  color: $dark-blue;
+  font-size: x-large;
+}
+
+.adoptee-text {
+  color: $dark-blue;
+  font-size: large;
+}
+
+@media(min-width: 992px){
+  .adoptions-container {
+    top: 16% !important;
+  }
+}
