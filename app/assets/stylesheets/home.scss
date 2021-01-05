@@ -48,14 +48,14 @@ $light-brown: #faf9f1;
     line-height: 1.2em;
     color: $light-brown;
   }
+
+  .dark-brown {
+    color: $dark-brown;
+  }
 }
 
 a:hover {
   color: $peach-skin !important;
   text-decoration: none !important;
   font-weight: 700 ;
-}
-
-.header-bottom {
-  // margin-bottom: -2%;
 }
