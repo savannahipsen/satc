@@ -1,5 +1,4 @@
-$(document).ready(function(){
-
+$(document).on('click', function(){
   $('.adptImg').on('click', function(){
     $(this).fadeOut(700);
     $('.adptImg').show().next('.adptTxt').hide();
@@ -10,5 +9,4 @@ $(document).ready(function(){
     $(this).fadeOut(700);
     $(this).prev('.adptImg').fadeIn(700);
   });
-  
 });
