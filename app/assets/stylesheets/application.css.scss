@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
  /* Large desktop */
@@ -37,6 +38,7 @@ $peach-skin: #fef8ee;
 $dark-brown: #76706c;
 $light-brown: #faf9f1;
 $transparent: #ffffff00;
+$peach-brown: #b1937fa8;
 
 @font-face {
    font-family: 'cormorant-garamond-reg';
@@ -58,18 +60,22 @@ $transparent: #ffffff00;
    src: asset-url('Foglihten.otf') format('truetype');
 }
 
-.application-body {
-  background-color: #b1937fa8;
-}
-
-a {
-  display: inline-block;
-  font-size: 14px;
-  color: $peach-skin;
+.body-color {
+  background-color: $peach-brown;
 }
 
 .nav-link {
+  font-size: 14px;
+  color: $peach-skin;
   letter-spacing: 1px;
+}
+
+.nav-image {
+  font-size: 30px;
+}
+
+.navbar-collapse {
+  padding-top: 2%;
 }
 
 .header-img {
@@ -88,42 +94,33 @@ a {
   margin-top: 3%;
 }
 
+.container {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.header-title {
+  font-family: 'foglihten';
+  color: $peach-skin;
+}
+
 #header {
   position: absolute;
   padding: 0 4vw;
   z-index: 9999;
   width: 100%;
-
-  .website-navcontainer {
-    display: inline-block;
-    border-radius: 10px;
-    padding: 0 10px;
-  }
-
-  .nav {
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 10px;
-
-    a {
-        display: inline-block;
-        padding: 20px 10px;
-        font-size: 14px;
-        color: $peach-skin;
-        letter-spacing: 1px;
-    }
-  }
 }
 
 #header-wrap {
   .container {
     position: absolute;
     width: 100%;
-    height: inherit;
     left: 50%;
     z-index: 2;
-    transform: translateX(-50%) translateY(-60%);
-    text-align: center;
+  }
+
+  .img-cont {
+    transform: translateX(-50%) translateY(-20%);
   }
 
   .header-title {
@@ -133,16 +130,6 @@ a {
     line-height: 1.2em;
     color: $peach-skin;
   }
-}
-
-.container {
-  position: absolute;
-  width: 98%;
-  height: inherit;
-  left: 50%;
-  z-index: 2;
-  transform: translateX(-50%) translateY(-60%);
-  text-align: center;
 }
 
 .right {
@@ -172,19 +159,19 @@ a {
 // iphones
 
 @media(max-width: 769px){
-  #header {
-    .website-navcontainer {
-      display: inline-block;
-      width: 70%;
-    }
-   }
-
   #header-wrap {
-    .header-title {
-      margin-bottom: revert;
+    .container {
       padding-top: 10%;
+    }
+
+    .header-title {
+      margin-top: revert;
       font-size: 175%;
     }
+  }
+
+  .container {
+    padding-top: 20%;
   }
 
   .header-img {
@@ -197,7 +184,8 @@ a {
   }
 
   .logo-style {
-    max-width: 40px;
+    max-width: 30px;
+    margin: 0 !important;
   }
 
   .media-hide {

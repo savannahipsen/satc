@@ -13,18 +13,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <%= favicon_link_tag asset_path('favicon-heart.png') %>
   </head>
-
-  <body class="application-body">
+  <body class="body-color">
     <header id="header">
-     <div class="navbar-logo">
-       <%= link_to image_tag('logos/peach-skin-logo.png', :class => "logo-style"), root_path %>
-     </div>
-     <%= render 'layouts/main_navbar' %>
+      <%= render 'layouts/main_navbar' %>
     </header>
-
-    <!-- <div> -->
+    <main role="main">
       <%= yield %>
-    <!-- </div> -->
+    </main>
   </body>
-
 </html>

@@ -1,4 +1,4 @@
-$(document).on('click', function(){
+$(document).on('ready', function(){
   $('.adptImg').on('click', function(){
     $(this).fadeOut(700);
     $('.adptImg').show().next('.adptTxt').hide();

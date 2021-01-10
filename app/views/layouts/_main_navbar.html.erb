@@ -1,11 +1,29 @@
-<div class="website-navcontainer media-hide">
-  <nav class="nav nav-center">
-     <%= link_to 'About Us', posts_path, class: "top-link nav-link" %>
-     <%= link_to 'Our Rescues', rescues_path, class: "top-link nav-link" %>
-     <%= link_to 'Adopt', adoptions_path, class: "top-link nav-link" %>
-  </nav>
-
-  <nav class="nav right">
-    <!-- <a href="#" class="nav-link top-link">Sign In</a> -->
-  </nav>
-</div>
+<nav class="navbar navbar-expand-md">
+  <div class="navbar-logo navbar-brand">
+    <%= link_to image_tag('logos/peach-skin-logo.png', :class => "logo-style"), root_path %>
+  </div>
+    <div class="navbar-collapse media-hide" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <%= link_to 'About Us', posts_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to 'Our Rescues', rescues_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to 'Adopt', adoptions_path, class: "nav-link" %>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link nav-image" href="https://instagram.com/fightforfelines"><%= fa_icon "instagram" %></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-image" href="#"><%= fa_icon "facebook" %></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link nav-image" href="#"><%= fa_icon "twitter" %></a>
+        </li>
+      </ul>
+    </div>
+</nav>
