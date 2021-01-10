@@ -48,10 +48,6 @@ $light-brown: #faf9f1;
   }
 }
 
-.navbar-top-padding {
-  padding-top: 40%;
-}
-
 .header-title {
   margin-bottom: 3%;
 }
@@ -67,23 +63,14 @@ $light-brown: #faf9f1;
     overflow: hidden;
     height: 1150px;
   }
-
-  .post-header-photo {
-    // overflow: hidden;
-    // height: 1100px;
-  }
 }
 
 // iphones
 
 @media(max-width: 769px){
-  .navbar-top-padding {
-    padding-top: 10%;
-  }
-
   #header-wrap .container {
-    top: 62% !important;
-    height: 100% !important;
+    top: 25%;
+    height: 100%;
   }
 
   .post-img {

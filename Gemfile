@@ -29,6 +29,7 @@ gem 'jquery-rails'
 gem 'sprockets-rails', '~> 2.3.2'
 gem 'bootstrap', '~> 4.3.1'
 gem 'bootstrap-sass', '~> 3.4.1'
+gem "font-awesome-rails"
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'devise'

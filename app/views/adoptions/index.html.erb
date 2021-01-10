@@ -1,18 +1,15 @@
-<div id="header-wrap">
-  <div class="container adoptions-container">
-    <div class="navbar-top-padding"></div>
-      <h1 class="header-title">Looking for a new family member?</h1>
-      <body>
-        <h5 class="text-center posts-header">
-          Our mission is not only to give our cats a second chance at life, but to guarantee that life is comfortable and fulfilling.
-          </br>
-          For this reason, the babes listed below are currently in loving foster homes and are available to meet by appointment only.
-          </br>
-          </br>
-          If you're interested in meeting an adoptee, please email <%= mail_to "savingallthecats@gmail.com", "savingallthecats@gmail.com", class: 'gold-text-link' %> to schedule a time that works best for you.
-        </h5>
-        </br>
-        <%= render "all_adoptions" %>
-    <body>
-  </div>
+<div class="container">
+  <h1 class="header-title">Looking for a new family member?</h1>
+  <body>
+    <h5 class="text-center posts-header">
+      Our mission is not only to give our cats a second chance at life, but to guarantee that life is comfortable and fulfilling.
+      </br>
+      For this reason, the babes listed below are currently in loving foster homes and are available to meet by appointment.
+      </br>
+      </br>
+      If you're interested in meeting an adoptee, please email <%= mail_to "savingallthecats@gmail.com", "savingallthecats@gmail.com", class: 'gold-text-link' %> to schedule a time that works best for you.
+    </h5>
+    </br>
+    <%= render "all_adoptions" %>
+  <body>
 </div>
